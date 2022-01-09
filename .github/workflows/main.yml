@@ -18,10 +18,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
+    - uses: actions/setup-node@v2
       with:
-        args: --minify
-    - uses: actions/upload-artifact@master
-      with:
-        name: website
-        path: './public'
+        node-version: '16'
+    - run: npm install
+        - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
+          with:
+            args: --minify
+        - uses: actions/upload-artifact@master
+          with:
+            name: website
+            path: './public'
