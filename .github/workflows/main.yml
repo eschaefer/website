@@ -25,15 +25,15 @@ jobs:
       - uses: jakejarvis/hugo-build-action@master # ...or replace 'master' with a full version tag, such as: v0.64.1
         with:
           args: --minify
-      - uses: appleboy/scp-action@master
+     - name: rsync deployments
+        uses: burnett01/rsync-deployments@5.2
         with:
-          host: ${{ secrets.DH_HOST }}
-          username: ${{ secrets.DH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: 22
-          source: './public'
-          target: 'test'
-          overwrite: true
+          switches: -avzr --delete
+          path: ./public
+          remote_path: test
+          remote_host: {{ secrets.DH_HOST }}
+          remote_user: {{ secrets.DH_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
       # - uses: actions/upload-artifact@master
       #   with:
       #     name: website
