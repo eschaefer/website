@@ -32,10 +32,10 @@ jobs:
       - uses: jakejarvis/hugo-build-action@master # ...or replace 'master' with a full version tag, such as: v0.64.1
         with:
           args: --minify
+      - run: echo "$remote_key"
       - run: |
           mkdir ~/.ssh
           echo "$remote_key" > ~/.ssh/gh_actions_key
-          echo "$remote_key"
 
 # chmod 600 ~/.ssh/gh_actions_key
 # rsync -avzr --delete -e "ssh -p ${remote_port} -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" ${local_dir} ${remote_user}@${remote_host}:${remote_dir}
