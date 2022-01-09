@@ -28,8 +28,6 @@ jobs:
       - run: |
           mkdir ~/.ssh
           echo "$remote_key" > ~/.ssh/gh_actions_key
-          chmod 600 ~/.ssh/gh_actions_key
-          rsync -avzr --delete -e "ssh -p ${remote_port} -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" ${local_dir} ${remote_user}@${remote_host}:${remote_dir}
         env:
           remote_host: ${{ secrets.DH_HOST }}
           remote_port: 22
@@ -37,5 +35,9 @@ jobs:
           remote_key: ${{ secrets.SSH_KEY }}
           local_dir: 'public/'
           remote_dir: '~/test/'
+      - run: echo "test thing"
+      - run: echo "$remote_host"
+        env:
+          remote_host: ${{ secrets.DH_HOST }}
 # chmod 600 ~/.ssh/gh_actions_key
 # rsync -avzr --delete -e "ssh -p ${remote_port} -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" ${local_dir} ${remote_user}@${remote_host}:${remote_dir}
