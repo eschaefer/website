@@ -33,8 +33,6 @@ jobs:
         with:
           args: --minify
       - run: |
-          npm install
-          npm run build
           mkdir ~/.ssh
           echo "$remote_key" > ~/.ssh/gh_actions_key
           chmod 600 ~/.ssh/gh_actions_key
