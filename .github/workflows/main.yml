@@ -31,8 +31,8 @@ jobs:
           switches: -avzr --delete
           path: ./public
           remote_path: test
-          remote_host: {{ secrets.DH_HOST }}
-          remote_user: {{ secrets.DH_USER }}
+          remote_host: ${{ secrets.DH_HOST }}
+          remote_user: ${{ secrets.DH_USER }}
           remote_key: ${{ secrets.SSH_KEY }}
       # - uses: actions/upload-artifact@master
       #   with:
