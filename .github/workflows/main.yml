@@ -16,7 +16,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v2
@@ -26,6 +25,7 @@ jobs:
       - uses: jakejarvis/hugo-build-action@master # ...or replace 'master' with a full version tag, such as: v0.64.1
         with:
           args: --minify
+      - name: 'upload'
         env:
           remote_host: ${{ secrets.DH_HOST }}
           remote_port: 22
@@ -33,7 +33,6 @@ jobs:
           remote_key: ${{ secrets.SSH_KEY }}
           local_dir: 'public/'
           remote_dir: '~/test/'
-        run: echo "The key is $remote_key"
         run: |
           mkdir ~/.ssh
           echo "$remote_key" > ~/.ssh/gh_actions_key
