@@ -25,8 +25,7 @@ jobs:
       - uses: jakejarvis/hugo-build-action@master # ...or replace 'master' with a full version tag, such as: v0.64.1
         with:
           args: --minify
-     - name: rsync deployments
-        uses: burnett01/rsync-deployments@5.2
+      - uses: burnett01/rsync-deployments@5.2
         with:
           switches: -avzr --delete
           path: ./public
@@ -34,7 +33,3 @@ jobs:
           remote_host: ${{ secrets.DH_HOST }}
           remote_user: ${{ secrets.DH_USER }}
           remote_key: ${{ secrets.SSH_KEY }}
-      # - uses: actions/upload-artifact@master
-      #   with:
-      #     name: website
-      #     path: './public'
