@@ -2,6 +2,9 @@ baseURL = 'https://eric-schaefer.com/'
 languageCode = 'en-us'
 title = 'Eric Schaefer'
 
+# Disable index pages for tags and stuff
+disableKinds = ['term', 'taxonomy']
+
 [permalinks]
   blog = '/blog/:year/:month/:day/:title/'
   til = '/til/:year/:month/:day/:title/'
@@ -14,3 +17,4 @@ title = 'Eric Schaefer'
     style = 'dracula'
   [markup.goldmark.renderer]
     unsafe= true
+

@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
+
+Redirect 301 /cv https://eric-schaefer.com
+redirectMatch 301 ^/blog/?$ https://eric-schaefer.com
+
+# 1 Month for all your static assets
+<filesMatch ".(ico|pdf|jpg|jpeg|png|gif|js|css|mp4)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# 4 HOURS for your real articles files
+<filesMatch ".(html|htm)$">
+Header set Cache-Control "max-age=14400, must-revalidate"
+</filesMatch>
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP
