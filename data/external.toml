@@ -1,0 +1,7 @@
+# External posts to merge into list as links
+
+posts = [
+  { url = 'http://dev.edenspiekermann.com/2015/10/26/prop-type-checking-in-react', title = 'Ensuring Component Stability through Prop Validation', platform = 'Edenspiekermann', date = 2015-10-25 },
+  { url = 'http://dev.edenspiekermann.com/2016/03/29/jekyll-on-heroku', title = 'Running a Jekyll Site on Heroku, The Easier Way', platform = 'Edenspiekermann', date = 2016-03-29 },
+  { url = 'http://dev.edenspiekermann.com/2016/08/26/react-textarea-auto-resize', title = 'Stranger Forms: Textarea Auto Resize with React', platform = 'Edenspiekermann', date = 2016-08-26 }
+]

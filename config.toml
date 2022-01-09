@@ -1,0 +1,16 @@
+baseURL = 'https://eric-schaefer.com/'
+languageCode = 'en-us'
+title = 'Eric Schaefer'
+
+[permalinks]
+  blog = '/blog/:year/:month/:day/:title/'
+  til = '/til/:year/:month/:day/:title/'
+
+[frontmatter]
+  date = [':filename', ':default']
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+  [markup.goldmark.renderer]
+    unsafe= true

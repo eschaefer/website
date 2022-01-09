@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} • {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ .Summary }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ $styles := resources.Get "css/main.css" | postCSS }}
+
+{{ range .AlternativeOutputFormats -}}
+{{ printf `
+<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }}
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ end }}

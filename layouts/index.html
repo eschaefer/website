@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ $blog := where $.Site.RegularPages.ByDate.Reverse "Section" "blog" }}
+{{ $til := where $.Site.RegularPages.ByDate.Reverse "Section" "til" }}
+{{ $external := $.Site.Data.external.posts }}
+
+<main class="container mx-auto">
+  {{ partial "menu.html" . }}
+  <h1>Eric Schaefer <span class="font-normal text-3xl">is a software engineer in Berlin.</span></h1>
+
+  <div class="md:grid md:gap-4 md:grid-cols-2 mt-20">
+    <div>
+      <h2>Posts</h2>
+      <ul class="p-0 leading-tight">
+        {{ range $blog }}
+        <li class="list-none mb-2">
+          <span class="text-sm text-gray-600 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
+          <a href="{{ .Permalink }}">{{ .Params.title | title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div>
+      <h2>Today I Learned</h2>
+      <ul class="p-0">
+        {{ range $til }}
+        <li class="list-none mb-2">
+          <span class="text-sm text-gray-600 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
+          <a href="{{ .Permalink }}">{{ .Params.title | title }}</a>        
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</main>
+{{ end }}

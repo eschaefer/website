@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5 {
+  @apply font-bold mt-12 mb-6
+}
+h1 {
+  @apply text-5xl font-extrabold
+}
+h2 {
+  @apply text-4xl
+}
+h3 {
+  @apply text-3xl
+}
+h4 {
+  @apply text-2xl
+}
+
+
+
+/* Code blocks */
+pre {
+  @apply p-2 overflow-x-auto bg-opacity-80 my-6 text-sm
+}
+
+p > code, li > code {
+    @apply bg-gray-200 bg-opacity-70 p-1 text-sm rounded
+}
+
+blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic font-medium my-6
+}
+
+p, ul, ol {
+    @apply leading-relaxed text-lg
+}
+
+a {
+    @apply text-pink-600 font-medium
+}
+a:hover {
+    @apply underline
+}
+
+img {
+    @apply my-6
+}
+

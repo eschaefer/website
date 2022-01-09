@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<main class="max-w-prose mx-auto block">
+  {{ partial "menu.html" . }}
+  <section id="main">
+    <h1 id="title">{{ .Title }}</h1>
+    <div>
+      {{ if isset .Params "date" }}
+      <span id="date" class="text-sm text-gray-600">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+      {{ end }}
+      {{ if in .Params.tags "til" }}
+      <span class="ml-2 inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Today I Learned</span>
+      {{ end }}
+    </div>
+    <article id="content" class="mt-6 prose prose-a:text-pink-600 prose-a:no-underline prose-code:before:content-[''] prose-code:after:content-[''] prose-code:font-medium">
+      {{ .Content }}
+    </article>
+  </section>
+</main>
+
+<aside id="meta" class="max-w-prose mx-auto block">
+  <div>
+    {{ with .PrevInSection }}
+    <a href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+  </div>
+</aside>
+
+<footer class="max-w-prose mx-auto block py-4">
+  <div>&copy; {{ now.Format "2006"}} Eric Schaefer</div>
+</footer>
+{{ end }}
