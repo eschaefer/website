@@ -27,12 +27,13 @@ jobs:
           args: --minify
       - uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.DREAMHOST_USER }}
+          host: ${{ secrets.DH_HOST }}
+          username: ${{ secrets.DH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
           source: './public'
           target: 'test'
+          overwrite: true
       # - uses: actions/upload-artifact@master
       #   with:
       #     name: website
