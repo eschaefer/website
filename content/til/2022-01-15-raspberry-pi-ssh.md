@@ -1,6 +1,6 @@
 ---
-title: "Fixing the Raspberry Pi SSH server"
-tags: [raspberry pi, linux]
+title: 'Fixing the Raspberry Pi SSH server'
+tags: [til, raspberry pi, linux]
 published: true
 comments: false
 ---
@@ -32,7 +32,7 @@ sudo service ssh restart
 
 This let me finally login with the password prompt.
 
-The next thing I did was to only allow login with my public key. 
+The next thing I did was to only allow login with my public key.
 
 To quickly put my public key on the Raspberry Pi:
 
@@ -55,5 +55,3 @@ sudo service ssh restart
 ```
 
 Now I'm able to login with just my public key!
-
-
