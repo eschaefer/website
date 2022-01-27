@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: 'About'
 ---
 
 <h2>Worked with</h2>
@@ -69,7 +69,7 @@ title: "About"
     - React Day Berlin: 06.12.2019
   </li>
   <li>
-    <a href="/blog/2017/10/22/apollo-graphql-talk-berlinjs/">
+    <a href="/blog/2017/10/22/apollo-graphql-a-step-toward-more-declarative-uis/">
       Apollo + GraphQL: A step toward more declarative UIs</a
     >
     - Berlin.JS: 19.10.2017
