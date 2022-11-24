@@ -3,14 +3,14 @@
 {{ $til := where $.Site.RegularPages.ByDate.Reverse "Section" "til" }}
 {{ $external := $.Site.Data.external.posts }}
 
-<main class="container mx-auto">
+<main class="container mx-auto pb-10">
   {{ partial "menu.html" . }}
   <h1>Eric Schaefer <span class="font-normal text-3xl">is a software engineer in Berlin.</span></h1>
 
   <div class="md:grid md:gap-4 md:grid-cols-2 mt-20">
     <div>
       <h2>Posts</h2>
-      <ul class="p-0 leading-tight">
+      <ul class="p-0">
         {{ range $blog }}
         <li class="list-none mb-2">
           <span class="text-sm text-gray-600 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
@@ -25,7 +25,7 @@
         {{ range $til }}
         <li class="list-none mb-2">
           <span class="text-sm text-gray-600 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
-          <a href="{{ .Permalink }}">{{ .Params.title }}</a>        
+          <a href="{{ .Permalink }}">{{ .Params.title }}</a>
         </li>
         {{ end }}
       </ul>
