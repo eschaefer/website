@@ -6,8 +6,6 @@ published: true
 comments: false
 ---
 
-# The Dark Side of requestIdleCallback
-
 The `requestIdleCallback()` method in the DOM spec allows us to improve the performance of web applications by allowing us to de-prioritize some functions which could be run at a later time. But as with any tool available to optimize code execution, it comes with a dark side.
 
 Here's an example of how I used it recently:
