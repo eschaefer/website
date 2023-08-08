@@ -15,7 +15,6 @@ title: 'About'
 <ul>
   <li>React Native</li>
   <li>Rust</li>
-  <li>WebAssembly</li>
 </ul>
 
 <h2>Open source</h2>
