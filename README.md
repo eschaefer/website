@@ -13,5 +13,5 @@ rm -rf public/* && hugo
 Push:
 
 ```
-rsync -avzr --delete ./public/* <user>@<server>:<folder>
+rsync -avzr --delete ./public/ <user>@<server>:<folder>
 ```
