@@ -26,7 +26,7 @@ pre {
 }
 
 p > code, li > code {
-    @apply bg-gray-200 bg-opacity-70 p-1 text-sm rounded
+    @apply bg-gray-200 bg-opacity-70 dark:bg-opacity-20 p-1 text-sm rounded
 }
 
 blockquote {
@@ -38,7 +38,7 @@ p, ul, ol {
 }
 
 a {
-    @apply text-pink-600 font-medium
+    @apply text-pink-600 dark:text-pink-300 font-medium
 }
 a:hover {
     @apply underline

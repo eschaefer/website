@@ -91,7 +91,7 @@ title: 'About'
     if (tracks && tracks.length) {
       document.querySelector(
         '.listening'
-      ).innerHTML = `<h2>🎵 Lately I am listening to...</h2>
+      ).innerHTML = `<h2>🎵 &nbsp;&nbsp;Lately I am listening to...</h2>
       <ul class="list lh-copy tracks"></ul>
     `;
 
@@ -99,9 +99,8 @@ title: 'About'
 
       tracks.slice(0, 25).forEach((track) => {
         let parent = document.createElement('li');
-        let text = `${track.artist['#text']} - ${track.name}`;
+        parent.innerHTML = `<strong>${track.artist['#text']}</strong> - <span>${track.name}</span>`;
         parent.className = 'track';
-        parent.append(text);
         el.appendChild(parent);
       });
     }

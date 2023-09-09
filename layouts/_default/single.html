@@ -6,13 +6,13 @@
     <h1 id="title">{{ .Title }}</h1>
     <div>
       {{ if isset .Params "date" }}
-      <span id="date" class="text-sm text-gray-600">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+      <span id="date" class="text-sm text-gray-600 dark:text-gray-400">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
       {{ end }}
       {{ if in .Params.tags "til" }}
-      <span class="ml-2 inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Today I Learned</span>
+      <span class="ml-2 inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 dark:bg-opacity-20 text-green-800 dark:text-green-300">Today I Learned</span>
       {{ end }}
     </div>
-    <article id="content" class="mt-6 prose prose-a:text-pink-600 prose-a:no-underline prose-code:before:content-[''] prose-code:after:content-[''] prose-code:font-medium">
+    <article id="content" class="mt-6 prose dark:prose-invert prose-a:text-pink-600 prose-a:dark:text-pink-300 prose-a:no-underline prose-code:before:content-[''] prose-code:after:content-[''] prose-code:font-medium">
       {{ .Content }}
     </article>
   </section>

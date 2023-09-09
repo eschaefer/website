@@ -13,7 +13,7 @@
       <ul class="p-0">
         {{ range $blog }}
         <li class="list-none mb-2">
-          <span class="text-sm text-gray-600 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
+          <span class="text-sm text-gray-600 dark:text-gray-400 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
           <a href="{{ .Permalink }}">{{ .Params.title | title }}</a>
         </li>
         {{ end }}
@@ -24,7 +24,7 @@
       <ul class="p-0">
         {{ range $til }}
         <li class="list-none mb-2">
-          <span class="text-sm text-gray-600 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
+          <span class="text-sm text-gray-600 dark:text-gray-400 pr-2 block md:inline-block">{{ .Date.Format "2006-01-02" }}</span>
           <a href="{{ .Permalink }}">{{ .Params.title }}</a>
         </li>
         {{ end }}
