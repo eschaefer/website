@@ -4,6 +4,7 @@ title: 'About'
 
 <h2>Worked with</h2>
 <ul>
+  <li><a href="https://linear.app">Linear</a></li>
   <li><a href="https://amie.so">Amie</a></li>
   <li><a href="https://www.eyeem.com">EyeEm</a></li>
   <li><a href="https://www.native-instruments.com">Native Instruments</a></li>
