@@ -20,6 +20,18 @@ title: 'About'
 
 <h2>Open source</h2>
 <ul>
+ <li>
+    <a href="https://github.com/eschaefer/mubi-watch-party">
+      Mubi Watch Party
+    </a>
+    - A web extension (Chrome + Firefox) to sync Mubi movies with friends.
+ </li>
+ <li>
+    <a href="https://github.com/eschaefer/rescript-peerjs">
+      rescript-peerjs
+    </a>
+    - ReScript bindings for PeerJS.
+  </li>
   <li>
     <a href="https://github.com/eschaefer/bs-react-grid-dnd">
       bs-react-grid-dnd
