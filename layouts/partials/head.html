@@ -2,7 +2,7 @@
 <title>{{ if .IsHome }}{{ .Title }} - software // music // nonsense {{ else }}{{ .Title }} • {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .IsHome }}Eric Schaefer is a software engineer in Berlin.{{ else }}{{ .Summary }}{{ end }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="me" href="https://mastodon.social/@ultrasandwich" />
 {{ $styles := resources.Get "css/main.css" | postCSS }}
 
 {{ range .AlternativeOutputFormats -}}

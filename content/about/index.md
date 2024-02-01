@@ -75,7 +75,7 @@ title: 'About'
 <h2>Talks</h2>
 <ul>
   <li>
-    <a href="https://www.youtube.com/watch?v=EmBzyBQU760">
+    <a href="https://www.youtube.com/watch?v=cmOSN_mZbEo">
       ReasonML for Skeptics</a
     >
     - React Day Berlin: 06.12.2019
