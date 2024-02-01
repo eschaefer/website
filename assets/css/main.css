@@ -48,3 +48,6 @@ img {
     @apply my-6
 }
 
+iframe {
+  max-width: 100%;
+}
