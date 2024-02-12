@@ -1,0 +1,7 @@
+{{ $alt := .Text }}
+
+{{ with .Page.Resources.GetMatch .Destination }}
+  {{ with .Resize "800x q85" }}
+    <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ $alt }}">
+  {{ end }}
+{{ end }}

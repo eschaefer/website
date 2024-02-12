@@ -14,23 +14,23 @@ One of their slides mentioned the website [sensor.community](https://sensor.comm
 
 Here are all the pieces ready to be assembled on my living room floor:
 
-![The kit pieces for DIY sensor.community](/images/posts/sensor-community-pieces.jpg)
+![The kit pieces for DIY sensor.community](sensor-community-pieces.jpg)
 
 ### The NodeMCU CPU/WLAN + BME280 temperature sensor
 
-![The NodeMCU CPU/WLAN](/images/posts/nodeMCU-cpu-wlan.jpg)
+![The NodeMCU CPU/WLAN](nodeMCU-cpu-wlan.jpg)
 
 This piece is responsible for powering the sensors, and communicating the collected data back to my WiFi router. Flashing the firmware for this was not possible with my Macbook Pro (M2, 2023). I used an old Linux laptop to do this instead, which was much more straightforward.
 
 ### The SDS011 fine dust sensor
 
-![The SDS011 fine dust sensor](/images/posts/sds011-fine-dust-sensor.jpg)
+![The SDS011 fine dust sensor](sds011-fine-dust-sensor.jpg)
 
 A clear plastic tube is connected to the nozzle on this piece, and a small fan circulates air through the sensor.
 
 ### Fully assembled kit fixed to my apartment window
 
-![The assembled kit for sensor.community](/images/posts/sensor-community-kit-assembled.jpg)
+![The assembled kit for sensor.community](sensor-community-kit-assembled.jpg)
 
 The white pipe provides a little housing for the electronics inside. A 3m USB cable runs under the window frame to power the the device. It's fixed to the window with some zip ties.
 
