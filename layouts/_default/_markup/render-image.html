@@ -1,7 +1,19 @@
-{{ $alt := .Text }}
+{{/*
+  This is a custom render-image.html file that will be used to render images in the
+  markdown content. It will first try to find the image in the page resources and if
+  it exists, it will resize it to 800px wide and convert it to webp format. If the image
+  does not exist in the page resources, it will use the image from the static folder.
+  The image will be lazy loaded.
+*/}}
 
-{{ with .Page.Resources.GetMatch .Destination }}
-  {{ with .Resize "800x q85" }}
+{{ $alt := .Text }}
+{{ $maybePageImage := .Page.Resources.GetMatch (.Destination | safeURL)}}
+
+{{ if $maybePageImage }}
+  {{ with $maybePageImage.Resize "800x q85 webp" }}
     <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ $alt }}">
   {{ end }}
+{{ else }}
+  <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ $alt }}">
 {{ end }}
+
