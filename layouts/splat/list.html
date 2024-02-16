@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main class="max-w-prose mx-auto block pb-10">
+  {{ partial "menu.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="text-gray-600 dark:text-gray-400">
+    A collection of inpiration. Music, art, anything.
+  </p>
+  <ul class="pt-8">
+    {{ range .Pages }}
+    <li class="pb-4">
+      <span class="text-sm text-gray-600 dark:text-gray-400"
+        >{{ .Date | time.Format "01.02.2006" }}</span
+      >
+      <p><strong>{{ .LinkTitle }}</strong></p>
+      <p class="py-2">{{ .Content }}</p>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
