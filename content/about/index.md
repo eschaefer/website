@@ -1,8 +1,13 @@
 ---
-title: 'About'
+title: 'About me'
 ---
 
-<h2>Worked with</h2>
+I'm a **software engineer** with 12 years of experience developing apps and user interfaces for the web. I work across the full stack, and have always leaned toward product companies that build beautiful and stable software.
+
+I have a strong preference for statically typed languages like **TypeScript** and **ReScript**. My library of choice for building UIs is **React**, and I've built backends and **GraphQL** servers with **node.js**. I've set up **CI/CD** pipelines and managed deployments to **GCP** (on Kubernetes), **AWS**, **Vercel**, and others.
+
+I've worked with:
+
 <ul>
   <li><a href="https://linear.app">Linear</a></li>
   <li><a href="https://amie.so">Amie</a></li>
@@ -10,12 +15,6 @@ title: 'About'
   <li><a href="https://www.native-instruments.com">Native Instruments</a></li>
   <li><a href="https://www.edenspiekermann.com/">Edenspiekermann</a></li>
   <li><a href="http://sunst-studio.com">Sunst Studio</a></li>
-</ul>
-
-<h2>Learning</h2>
-<ul>
-  <li>React Native</li>
-  <li>Rust</li>
 </ul>
 
 <h2>Open source</h2>
