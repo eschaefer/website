@@ -6,7 +6,7 @@ I'm a **software engineer** with 12 years of experience developing apps and user
 
 I have a strong preference for statically typed languages like **TypeScript** and **ReScript**. My library of choice for building UIs is **React**, and I've built backends and **GraphQL** servers with **node.js**. I've set up **CI/CD** pipelines and managed deployments to **GCP** (on Kubernetes), **AWS**, **Vercel**, and others.
 
-I've worked with:
+I've worked at:
 
 <ul>
   <li><a href="https://linear.app">Linear</a></li>
