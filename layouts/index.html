@@ -21,7 +21,7 @@
             class="text-sm text-gray-600 dark:text-gray-400 flex flex-col justify-center"
             >{{ .Date.Format "2006-01-02" }}</span
           >
-          <a class="truncate" href="{{ .Permalink }}"
+          <a class="md:truncate" href="{{ .Permalink }}"
             >{{ .Params.title | title }}</a
           >
         </li>
@@ -39,7 +39,7 @@
             class="text-sm text-gray-600 dark:text-gray-400 flex flex-col justify-center"
             >{{ .Date.Format "2006-01-02" }}</span
           >
-          <a class="truncate" href="{{ .Permalink }}">{{ .Params.title }}</a>
+          <a class="md:truncate" href="{{ .Permalink }}">{{ .Params.title }}</a>
         </li>
         {{ end }}
       </ul>
