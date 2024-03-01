@@ -4,7 +4,7 @@ tags: [blog, bash]
 published: true
 ---
 
-I have tons of old digital photos with the correct date in the filename. But that date doesn't match anymore with the file creation date. This can pose a big problem for a some photo library software out there, which depends on file creation date to correctly organize the photos (looking at you Google Photos).
+I have a lot of old digital photos with the correct date in the filename. But that date doesn't match anymore with the file creation date. This can pose a big problem for a some photo library software out there, which depends on file creation date to correctly organize the photos (looking at you Google Photos).
 
 Most of my photos generated from a digital camera or phone have dates somewhere in the file names, formatted something like:
 
