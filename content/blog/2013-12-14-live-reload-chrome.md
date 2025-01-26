@@ -1,8 +1,8 @@
 ---
-title: "The quickest way to set-up live reload in Chrome"
+title: 'The quickest way to set-up live reload in Chrome'
 tags: [front end, tools]
 categories: blog
-published: true
+
 comments: true
 ---
 

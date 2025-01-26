@@ -1,7 +1,6 @@
 ---
 title: 'Bulk fixing photo and video dates'
 tags: [blog, bash]
-published: true
 ---
 
 I have a lot of old digital photos with the correct date in the filename. But that date doesn't match anymore with the file creation date. This can pose a big problem for a some photo library software out there, which depends on file creation date to correctly organize the photos (looking at you Google Photos).

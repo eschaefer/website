@@ -1,8 +1,8 @@
 ---
-title: "Launched: Openers"
+title: 'Launched: Openers'
 tags: [php, wordpress, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

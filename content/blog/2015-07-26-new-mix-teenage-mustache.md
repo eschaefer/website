@@ -1,8 +1,8 @@
 ---
-title: "Music and Noise Compilation: Teenage Mustache"
+title: 'Music and Noise Compilation: Teenage Mustache'
 tags: [music, audio, mix]
 categories: blog
-published: true
+
 comments: false
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Building an audiovisual installation using PD"
+title: 'Building an audiovisual installation using PD'
 tags: [creative code, PureData]
 categories: blog
-published: true
+
 comments: false
 ---
 

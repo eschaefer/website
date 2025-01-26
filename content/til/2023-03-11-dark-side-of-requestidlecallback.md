@@ -1,8 +1,8 @@
 ---
-title: "The Dark Side of requestIdleCallback"
+title: 'The Dark Side of requestIdleCallback'
 tags: [javascript]
 categories: blog
-published: true
+
 comments: false
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Plug and Play Performance Boost with mod_pagespeed"
+title: 'Plug and Play Performance Boost with mod_pagespeed'
 tags: [performance, apache]
 categories: blog
-published: true
+
 comments: false
 ---
 

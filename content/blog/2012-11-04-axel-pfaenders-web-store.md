@@ -2,7 +2,7 @@
 title: "Also launched: Axel Pfaender's web store"
 tags: [Wordpress, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

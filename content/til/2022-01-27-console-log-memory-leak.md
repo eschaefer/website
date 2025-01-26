@@ -1,7 +1,7 @@
 ---
 title: 'Console logging can lead to memory leaks'
 tags: [javascript, til]
-published: true
+
 comments: false
 ---
 

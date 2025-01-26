@@ -1,8 +1,8 @@
 ---
-title: "Berlin Boombox launch and web store"
+title: 'Berlin Boombox launch and web store'
 tags: [drupal, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

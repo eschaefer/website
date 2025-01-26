@@ -1,8 +1,8 @@
 ---
-title: "Launched: SAND Journal"
+title: 'Launched: SAND Journal'
 tags: [drupal]
 categories: blog
-published: true
+
 comments: false
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Setting Up Docker From Nothing"
+title: 'Setting Up Docker From Nothing'
 tags: [docker, deployment]
 categories: blog
-published: true
+
 comments: false
 ---
 

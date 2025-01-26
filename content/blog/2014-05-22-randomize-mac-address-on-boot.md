@@ -1,8 +1,8 @@
 ---
-title: "How to Spoof a (Valid) Random MAC Address on Bootup"
+title: 'How to Spoof a (Valid) Random MAC Address on Bootup'
 tags: [scripts, snippets]
 categories: blog
-published: true
+
 comments: true
 ---
 

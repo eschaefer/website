@@ -2,7 +2,7 @@
 title: 'Building a DIY Air Quality Sensor'
 tags: [DIY, hardware]
 categories: blog
-published: true
+
 comments: false
 ---
 

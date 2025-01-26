@@ -2,7 +2,7 @@
 title: 'Repairing Shock Cord on Quarter Dome 2 Tent Poles'
 tags: [camping, outdoors]
 categories: blog
-published: true
+
 comments: false
 ---
 

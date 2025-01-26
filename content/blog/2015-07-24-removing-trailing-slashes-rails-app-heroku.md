@@ -1,8 +1,8 @@
 ---
-title: "Removing Trailing Slashes from a Rails App on Heroku"
+title: 'Removing Trailing Slashes from a Rails App on Heroku'
 tags: [rails, ruby, rack-redirect]
 categories: blog
-published: true
+
 comments: false
 ---
 

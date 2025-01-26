@@ -2,7 +2,7 @@
 title: "Launched: Kofelgschroa's Band Website"
 tags: [drupal, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

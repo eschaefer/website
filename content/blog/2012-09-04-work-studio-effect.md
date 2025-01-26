@@ -1,8 +1,8 @@
 ---
-title: "Work Studio in Effect"
+title: 'Work Studio in Effect'
 tags: [blog]
 categories: blog
-published: true
+
 comments: false
 ---
 

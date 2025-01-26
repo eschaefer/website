@@ -1,8 +1,8 @@
 ---
 categories: blog
-title: "Prettify JSON data in the Rails console with pretty_generate"
+title: 'Prettify JSON data in the Rails console with pretty_generate'
 tags: [Ruby, Rails, JSON]
-published: true
+
 comments: true
 ---
 

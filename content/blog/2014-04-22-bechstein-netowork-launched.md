@@ -1,8 +1,8 @@
 ---
-title: "Launched: Bechstein Network"
+title: 'Launched: Bechstein Network'
 tags: [php, wordpress, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

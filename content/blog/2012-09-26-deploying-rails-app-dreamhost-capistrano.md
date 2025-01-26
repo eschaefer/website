@@ -1,8 +1,8 @@
 ---
-title: "Deploying a Rails Application to Dreamhost with Capistrano"
+title: 'Deploying a Rails Application to Dreamhost with Capistrano'
 tags: [Rails, deployment, Git, tutorial]
 categories: blog
-published: true
+
 comments: false
 ---
 
@@ -10,9 +10,9 @@ I don't think there's a quick way to figure out your first "real" Rails deployme
 
 #### Some background before getting started:
 
--   [Railscast: Deploying to a VPS](http://railscasts.com/episodes/335-deploying-to-a-vps)
--   [Capistrano on Dreamhost (kinda dated, but useful)](http://wiki.dreamhost.com/Capistrano)
--   [Syncing a git repository](http://wiki.dreamhost.com/Git#Setup_One:_For_the_Impatient) directly between your machine and Dreamhost. No GitHub!
+- [Railscast: Deploying to a VPS](http://railscasts.com/episodes/335-deploying-to-a-vps)
+- [Capistrano on Dreamhost (kinda dated, but useful)](http://wiki.dreamhost.com/Capistrano)
+- [Syncing a git repository](http://wiki.dreamhost.com/Git#Setup_One:_For_the_Impatient) directly between your machine and Dreamhost. No GitHub!
 
 I spent a good while figuring out a recipe to deploy a Rails app using Git with Capistrano on Dreamhost's particular hosting setup. I felt compelled now to share some of the snags I hit, so hopefully I can save someone else out there from wasting a few hours.
 

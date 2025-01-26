@@ -1,8 +1,8 @@
 ---
-title: "Babel Plugin for React Components Made with Framer X"
+title: 'Babel Plugin for React Components Made with Framer X'
 tags: [react, design, javascript, framer]
 categories: blog
-published: true
+
 comments: false
 ---
 
@@ -20,7 +20,7 @@ Then add it to your Babel configuration:
 
 ```json
 {
-	"plugins": ["babel-plugin-framer-x"]
+  "plugins": ["babel-plugin-framer-x"]
 }
 ```
 

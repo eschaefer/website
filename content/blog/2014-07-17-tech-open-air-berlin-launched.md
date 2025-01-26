@@ -1,8 +1,8 @@
 ---
-title: "Launched: Tech Open Air Berlin"
+title: 'Launched: Tech Open Air Berlin'
 tags: [php, wordpress, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

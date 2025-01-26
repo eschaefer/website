@@ -1,8 +1,8 @@
 ---
-title: "Compiling dcraw to WebAssembly"
+title: 'Compiling dcraw to WebAssembly'
 tags: [webassembly, javascript, wasm]
 categories: blog
-published: true
+
 comments: false
 ---
 
@@ -88,8 +88,8 @@ $ emcc dcraw.c -lm -DNODEPS -s WASM=1
 
 🎉 And it worked! A few non-fatal warnings were generated, but so were two files:
 
--   `a.out.js`
--   `a.out.wasm`
+- `a.out.js`
+- `a.out.wasm`
 
 We have our WASM file, and a Javascript "glue" file which lets us interface with it.
 
@@ -101,8 +101,8 @@ $ emcc dcraw.c -lm -DNODEPS -s WASM=1 -o dcraw.js
 
 Which yields
 
--   `dcraw.js`
--   `dcraw.wasm`
+- `dcraw.js`
+- `dcraw.wasm`
 
 ### So how do we call our WebAssembly module?
 
@@ -154,7 +154,7 @@ So we are calling `dcraw`, but it's pretty useless without any files or flags. L
 `Module.callMain()` can receive one array of arguments. The last one must always be a **reference** to a file buffer stored as a `Uint8Array`. All precending ones can be flags like `-e`, `-c`, etc. It will take some work to get us there, but it would look like
 
 ```javascript
-Module.callMain(["-e", "raw_file_buffer"]);
+Module.callMain(['-e', 'raw_file_buffer']);
 ```
 
 So how do we store a RAW file buffer as a `Uint8Array` in MEMFS, and then pass a reference to it?
@@ -253,9 +253,9 @@ If you would like to see the full code example from this article (plus a little 
 
 ## Further reading
 
--   [dcraw home page](https://www.dechifro.org/dcraw)
--   [Compiling dcraw to node](https://github.com/zfedoran/dcraw.js/blob/master/makefile)
--   [Compiling an Existing C Module to WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly/existing_C_to_wasm) - _MDN_
--   [Compiling a New C/C++ Module to WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm) - _MDN_
--   [Building projects with Emscripten](https://emscripten.org/docs/compiling/Building-Projects.html)
--   [Squoosh](https://github.com/GoogleChromeLabs/squoosh) - Open source, encode/decode many image formats in the browser using WASM
+- [dcraw home page](https://www.dechifro.org/dcraw)
+- [Compiling dcraw to node](https://github.com/zfedoran/dcraw.js/blob/master/makefile)
+- [Compiling an Existing C Module to WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly/existing_C_to_wasm) - _MDN_
+- [Compiling a New C/C++ Module to WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm) - _MDN_
+- [Building projects with Emscripten](https://emscripten.org/docs/compiling/Building-Projects.html)
+- [Squoosh](https://github.com/GoogleChromeLabs/squoosh) - Open source, encode/decode many image formats in the browser using WASM

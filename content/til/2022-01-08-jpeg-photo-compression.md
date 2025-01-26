@@ -1,7 +1,7 @@
 ---
-title: "Components of JPEG compression"
+title: 'Components of JPEG compression'
 tags: [digital photos, compression, til]
-published: true
+
 comments: false
 ---
 

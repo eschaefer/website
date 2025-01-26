@@ -1,7 +1,7 @@
 ---
 title: 'Import all modules in a directory with webpack'
 tags: [til, javascript, webpack]
-published: true
+
 comments: false
 ---
 

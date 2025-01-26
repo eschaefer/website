@@ -1,8 +1,8 @@
 ---
-title: "Launched: Benjamin Obdyke"
+title: 'Launched: Benjamin Obdyke'
 tags: [php, portfolio]
 categories: blog
-published: true
+
 comments: false
 ---
 

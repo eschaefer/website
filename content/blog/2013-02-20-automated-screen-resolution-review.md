@@ -1,9 +1,9 @@
 ---
-title: "Automate responsive screen captures with Review"
-description: "Awesome node.js package that uses PhantomJS for easy screengrabs."
+title: 'Automate responsive screen captures with Review'
+description: 'Awesome node.js package that uses PhantomJS for easy screengrabs.'
 tags: [automation, node.js, front-end]
 categories: blog
-published: true
+
 comments: false
 ---
 

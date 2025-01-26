@@ -1,8 +1,8 @@
 ---
-title: "How (Code) Language Creates Its Own Culture"
+title: 'How (Code) Language Creates Its Own Culture'
 tags: [programming, ruby]
 categories: blog
-published: true
+
 comments: false
 ---
 

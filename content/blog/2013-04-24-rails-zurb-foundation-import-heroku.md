@@ -1,8 +1,8 @@
 ---
-title: "Avoid a Headache: Precompiling Zurb (Foundation) on Heroku"
+title: 'Avoid a Headache: Precompiling Zurb (Foundation) on Heroku'
 tags: [programming, rails]
 categories: blog
-published: true
+
 comments: true
 ---
 

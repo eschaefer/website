@@ -1,8 +1,8 @@
 ---
-title: "Now Exhibiting in Berlin: PLAYING THE FIELD"
+title: 'Now Exhibiting in Berlin: PLAYING THE FIELD'
 tags: [creative code, PureData]
 categories: blog
-published: true
+
 comments: false
 ---
 

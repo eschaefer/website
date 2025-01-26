@@ -1,7 +1,7 @@
 ---
 title: 'Fixing the Raspberry Pi SSH server'
 tags: [til, raspberry pi, linux]
-published: true
+
 comments: false
 ---
 
