@@ -26,7 +26,7 @@ jobs:
       - uses: jakejarvis/hugo-build-action@master # ...or replace 'master' with a full version tag, such as: v0.64.1
         with:
           args: --minify
-      - uses: burnett01/rsync-deployments@6.0.0
+      - uses: burnett01/rsync-deployments@7.0.2
         with:
           switches: -avzr --delete
           path: public/
