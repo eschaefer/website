@@ -1,38 +1,38 @@
-name: Generate PR for new splat
+# name: Generate PR for new splat
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  generate-pr:
-    runs-on: ubuntu-latest
+# jobs:
+#   generate-pr:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      - name: Create new Markdown file
-        run: |
-          FILE_NAME="content/splat/$(date -u +"%Y-%m-%d")-file.md"
-          echo '---' > "$FILE_NAME"
-          echo 'title: New File' >> "$FILE_NAME"
-          echo '---' >> "$FILE_NAME"
-          echo '# New File Content' >> "$FILE_NAME"
+#       - name: Create new Markdown file
+#         run: |
+#           FILE_NAME="content/splat/$(date -u +"%Y-%m-%d")-file.md"
+#           echo '---' > "$FILE_NAME"
+#           echo 'title: New File' >> "$FILE_NAME"
+#           echo '---' >> "$FILE_NAME"
+#           echo '# New File Content' >> "$FILE_NAME"
 
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add content
-          git commit -m "Add new Markdown file"
-          git push
+#       - name: Commit and push changes
+#         run: |
+#           git config --local user.email "action@github.com"
+#           git config --local user.name "GitHub Action"
+#           git add content
+#           git commit -m "Add new Markdown file"
+#           git push
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          title: 'Add new splat'
-          body: 'This pull request adds a new Markdown file to the content/splat directory.'
+#       - name: Create Pull Request
+#         uses: peter-evans/create-pull-request@v6
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           branch: main
+#           title: 'Add new splat'
+#           body: 'This pull request adds a new Markdown file to the content/splat directory.'
